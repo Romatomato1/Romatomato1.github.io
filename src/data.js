@@ -102,9 +102,11 @@ export const featuredProjects = [
   {
     name: "FindAThread",
     description:
-      "Capstone project: a virtual wardrobe/outfit planner web app built with Flask, MySQL, and Google's Vision API.",
+      "Capstone project: upload photos of your clothes, auto-categorized via Google's Vision API, then mix and match pieces from your virtual wardrobe to build and save outfits.",
     url: "https://github.com/Romatomato1/FindAThread",
-    tags: ["Flask", "Python", "MySQL"],
+    tags: ["Flask", "Python", "Azure", "Google Vision API"],
+    image: "/screenshots/findathread-outfit-builder.png",
+    imageAlt: "FindAThread outfit builder screen with a silhouette for mixing and matching clothing",
   },
 ];
 
