@@ -83,10 +83,11 @@ export const education = {
 
 export const projects = [
   {
-    name: "TransactionsAPI",
-    description: "API to get and update transactions.",
-    url: "https://github.com/Romatomato1/TransactionsAPI",
-    tags: ["Java", "Spring Boot"],
+    name: "order-pipeline",
+    description:
+      "Event-driven order fulfillment pipeline: Kafka with idempotent consumers, dead-letter queue with retry/backoff, Postgres, and a Prometheus/Grafana observability stack.",
+    url: "https://github.com/Romatomato1/order-pipeline",
+    tags: ["Java", "Spring Boot", "Kafka", "Docker"],
   },
   {
     name: "BudgetPlanner",
