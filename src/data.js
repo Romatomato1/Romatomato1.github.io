@@ -81,13 +81,15 @@ export const education = {
   honors: "Dean's List",
 };
 
-export const projects = [
+export const featuredProjects = [
   {
     name: "order-pipeline",
     description:
       "Event-driven order fulfillment pipeline: Kafka with idempotent consumers, dead-letter queue with retry/backoff, Postgres, and a Prometheus/Grafana observability stack.",
     url: "https://github.com/Romatomato1/order-pipeline",
     tags: ["Java", "Spring Boot", "Kafka", "Docker"],
+    image: "/screenshots/order-pipeline-grafana.png",
+    imageAlt: "Grafana dashboard showing order-pipeline throughput and fulfillment outcomes",
   },
   {
     name: "BudgetPlanner",
@@ -103,6 +105,9 @@ export const projects = [
     url: "https://github.com/Romatomato1/FindAThread",
     tags: ["Flask", "Python", "MySQL"],
   },
+];
+
+export const otherProjects = [
   {
     name: "BlastGeneNucleotide",
     description:

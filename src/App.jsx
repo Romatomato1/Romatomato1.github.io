@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
-import { profile, skills, experience, education, projects } from "./data";
+import {
+  profile,
+  skills,
+  experience,
+  education,
+  featuredProjects,
+  otherProjects,
+} from "./data";
 import "./App.css";
 
 const SECTIONS = [
@@ -157,7 +164,7 @@ function Projects() {
     <section id="projects" className="section">
       <h2 className="section-title">Projects</h2>
       <div className="project-grid">
-        {projects.map((p) => (
+        {featuredProjects.map((p) => (
           <a
             key={p.name}
             className="project-card"
@@ -165,6 +172,14 @@ function Projects() {
             target="_blank"
             rel="noreferrer"
           >
+            {p.image && (
+              <img
+                className="project-card-image"
+                src={p.image}
+                alt={p.imageAlt || ""}
+                loading="lazy"
+              />
+            )}
             <h3>{p.name}</h3>
             <p>{p.description}</p>
             <div className="project-tags">
@@ -175,6 +190,18 @@ function Projects() {
           </a>
         ))}
       </div>
+
+      <h3 className="more-projects-title">More on GitHub</h3>
+      <ul className="more-projects-list">
+        {otherProjects.map((p) => (
+          <li key={p.name}>
+            <a href={p.url} target="_blank" rel="noreferrer">
+              {p.name}
+            </a>
+            <span>{p.description}</span>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
