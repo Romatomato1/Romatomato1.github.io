@@ -9,6 +9,7 @@ export const profile = {
   email: "roman.p.gofman@gmail.com",
   github: "https://github.com/Romatomato1",
   linkedin: "https://www.linkedin.com/in/romangofman/",
+  resume: "/files/Roman_Gofman_Resume.pdf",
 };
 
 export const skills = [

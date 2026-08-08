@@ -487,6 +487,9 @@ main {
 }
 
 .contact-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
   margin-bottom: 24px;
 }
 

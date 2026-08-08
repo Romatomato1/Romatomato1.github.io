@@ -97,6 +97,9 @@ function Hero() {
           LinkedIn
         </a>
         <a href={`mailto:${profile.email}`}>Email</a>
+        <a href={profile.resume} target="_blank" rel="noreferrer">
+          Resume
+        </a>
       </div>
     </section>
   );
@@ -217,6 +220,9 @@ function Contact() {
       <div className="contact-actions">
         <a className="btn btn-primary" href={`mailto:${profile.email}`}>
           {profile.email}
+        </a>
+        <a className="btn btn-ghost" href={profile.resume} target="_blank" rel="noreferrer">
+          Download Resume
         </a>
       </div>
       <div className="hero-links">
