@@ -84,6 +84,15 @@ export const education = {
 
 export const featuredProjects = [
   {
+    name: "api-gateway",
+    description:
+      "Reverse proxy / API gateway built from scratch in Go: round-robin load balancing, active health checks, per-client rate limiting, and per-backend circuit breaking, with a Prometheus/Grafana observability stack.",
+    url: "https://github.com/Romatomato1/api-gateway",
+    tags: ["Go", "Prometheus", "Grafana", "Docker"],
+    image: "/screenshots/api-gateway-grafana.jpg",
+    imageAlt: "Grafana dashboard showing api-gateway request rate, latency, backend health, and circuit breaker state",
+  },
+  {
     name: "order-pipeline",
     description:
       "Event-driven order fulfillment pipeline: Kafka with idempotent consumers, dead-letter queue with retry/backoff, Postgres, and a Prometheus/Grafana observability stack.",
