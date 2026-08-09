@@ -95,9 +95,11 @@ export const featuredProjects = [
   {
     name: "BudgetPlanner",
     description:
-      "Full-stack budget planning app with a Spring Boot backend and React frontend.",
+      "Full-stack budget tracker: set a monthly limit per category, log expenses against it, and see spent-vs-remaining with live progress bars.",
     url: "https://github.com/Romatomato1/BudgetPlanner",
-    tags: ["Java", "Spring Boot", "React"],
+    tags: ["Java", "Spring Boot", "React", "JPA"],
+    image: "/screenshots/budgetplanner-overview.png",
+    imageAlt: "Budget Planner UI showing per-category spending progress bars and totals",
   },
   {
     name: "FindAThread",
