@@ -380,7 +380,6 @@ main {
 .project-card {
   display: block;
   text-align: left;
-  text-decoration: none;
   background: var(--bg-raised);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -427,6 +426,23 @@ main {
   background: var(--bg);
   border: 1px solid var(--border);
   color: var(--text);
+}
+
+.project-links {
+  display: flex;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.project-links a {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 640px) {

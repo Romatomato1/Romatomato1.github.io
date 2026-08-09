@@ -168,13 +168,7 @@ function Projects() {
       <h2 className="section-title">Projects</h2>
       <div className="project-grid">
         {featuredProjects.map((p) => (
-          <a
-            key={p.name}
-            className="project-card"
-            href={p.url}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <div key={p.name} className="project-card">
             {p.image && (
               <img
                 className="project-card-image"
@@ -190,7 +184,17 @@ function Projects() {
                 <span key={t}>{t}</span>
               ))}
             </div>
-          </a>
+            <div className="project-links">
+              <a href={p.url} target="_blank" rel="noreferrer">
+                GitHub ↗
+              </a>
+              {p.demoUrl && (
+                <a href={p.demoUrl} target="_blank" rel="noreferrer">
+                  Live Demo ↗
+                </a>
+              )}
+            </div>
+          </div>
         ))}
       </div>
 

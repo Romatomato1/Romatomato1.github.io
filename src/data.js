@@ -88,6 +88,7 @@ export const featuredProjects = [
     description:
       "Reverse proxy / API gateway built from scratch in Go: round-robin load balancing, active health checks, per-client rate limiting, and per-backend circuit breaking, with a Prometheus/Grafana observability stack.",
     url: "https://github.com/Romatomato1/api-gateway",
+    demoUrl: "https://api-gateway-demo-gsy2.onrender.com/demo/",
     tags: ["Go", "Prometheus", "Grafana", "Docker"],
     image: "/screenshots/api-gateway-grafana.jpg",
     imageAlt: "Grafana dashboard showing api-gateway request rate, latency, backend health, and circuit breaker state",
