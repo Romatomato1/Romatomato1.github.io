@@ -14,6 +14,7 @@ export const profile = {
 
 export const skills = [
   "Java",
+  "Go",
   "AWS",
   "Kafka",
   "Kubernetes",
